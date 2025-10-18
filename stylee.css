@@ -1,0 +1,84 @@
+
+
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#cart-container {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 34px;
+  padding: 10px;
+  max-width: 1200px;
+  
+ 
+  
+}
+
+/* Card Styles */
+.card {
+  width: 100%;
+  max-width: 350px;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+  
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(21, 149, 182, 0.6); /* Blue shadow */
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-title h1,
+.card-description h1 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.card-title span,
+.card-description span {
+  font-weight: 400;
+}
+
+/* Responsive Layout */
+@media (min-width: 600px) {
+  .card {
+    flex: 1 1 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    flex: 1 1 30%;
+  }
+}
+.none{
+  display: none;
+}
