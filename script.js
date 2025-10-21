@@ -3,9 +3,7 @@
 let project_cart = document.querySelector("#cart-container");
 let latest_button = document.querySelector("#latest-button");
 let sectionn = document.querySelector("#section");
-latest_button.addEventListener('click',()=>{
-sectionn.classList.toggle('flex')
-})
+
 
 
 projectsData.forEach((value) => {
@@ -37,6 +35,7 @@ let Cross = document.querySelector("#cross");
 let button = document.querySelector("#btn");
 button.addEventListener('click',()=>{
 popup.classList.add('flex')
+popup.classList.remove('none')
 console.log("hii")
 })
 
@@ -48,8 +47,10 @@ console.log("hii")
 
 
 function Scrollto() {
+   sectionn.classList.remove('hidden');
+   sectionn.classList.add('flex')
   window.scrollTo({
-    top: 0,
+    top: 700,
     behavior: "smooth"
   });
 }
