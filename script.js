@@ -4,7 +4,7 @@ let project_cart = document.querySelector("#cart-container");
 let latest_button = document.querySelector("#latest-button");
 let sectionn = document.querySelector("#section");
 latest_button.addEventListener('click',()=>{
-sectionn.classList.toggle('none')
+sectionn.classList.toggle('flex')
 })
 
 
@@ -29,3 +29,27 @@ projectsData.forEach((value) => {
 
   project_cart.append(cart_detail);
 });
+
+
+
+let popup = document.querySelector("#pop-up-about");
+let Cross = document.querySelector("#cross");
+let button = document.querySelector("#btn");
+button.addEventListener('click',()=>{
+popup.classList.add('flex')
+console.log("hii")
+})
+
+Cross.addEventListener('click',()=>{
+popup.classList.remove('flex')
+console.log("hii")
+})
+
+
+
+function Scrollto() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
