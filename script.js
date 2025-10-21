@@ -36,12 +36,12 @@ let button = document.querySelector("#btn");
 button.addEventListener('click',()=>{
 popup.classList.add('flex')
 popup.classList.remove('none')
-console.log("hii")
+
 })
 
 Cross.addEventListener('click',()=>{
 popup.classList.remove('flex')
-console.log("hii")
+
 })
 
 
@@ -50,7 +50,7 @@ function Scrollto() {
    sectionn.classList.remove('hidden');
    sectionn.classList.add('flex')
   window.scrollTo({
-    top: 700,
+    top: 400,
     behavior: "smooth"
   });
 }
